@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        bat 'python --version'
+        bat 'C:\Users\pc\AppData\Local\Programs\Python\Python311\python --version'
       }
     }
   }
