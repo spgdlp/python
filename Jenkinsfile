@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('java version') {
-      steps {
-        bat 'java --version'
-      }
-    }
     stage('python version') {
       steps {
         bat 'python --version'
+      }
+    }
+    stage('descompress') {
+      steps {
+        bat 'python descompresor_zip.py'
       }
     }
   }
