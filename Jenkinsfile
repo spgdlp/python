@@ -6,9 +6,9 @@ pipeline {
         bat 'python --version'
       }
     }
-    stage('descompress') {
+    stage('java version') {
       steps {
-        bat 'python descompresor_zip.py'
+        bat 'java --version'
       }
     }
   }
